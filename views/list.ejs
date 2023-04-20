@@ -1,32 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>To Do List</title>
-</head>
-<body>
+<%- include('header') %>
     <div class="box">
-        <div class="date">
-            <% if (date.includes("Saturday") || date.includes("Sunday")){ %>
-                <h1 style="color: rgb(183, 65, 14)"><%=date%></h1>
-            <%} else{%>
-                <h1 style="color: rgb(255, 247, 231)"><%=date%></h1>        
-            <%}%>
+        <div class="title">
+            <h1><%=listTitle%></h1>        
         </div>
-        
         <div class="list">
-            <% for (var i=0; i<newListItems.length; i++){%>
-                <p class="listItems"><input type="checkbox"><span><%=newListItems[i]%></span></p>
+            <% for (var i=0; i<newListTasks.length; i++){%>
+                <p class="listItems"><input type="checkbox"><span><%=newListTasks[i]%></span></p>
                 <hr>
             <%}%>
-            <form class="item" action="/" method="post">
+            <form class="item" action="<%=route%>" method="post">
                 <input type="text" name="newItem" placeholder="New Task" autocomplete="off">
-                <button type="submit" name="add">+</button>
+                <button type="submit" name="list">+</button>
             </form>
         </div>
     </div>
-</body>
-</html>
+<%- include('footer') %>
