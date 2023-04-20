@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: -webkit-linear-gradient(70deg, rgb(123, 148, 86) 50%, rgb(255, 247, 231) 50%);
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+.box{
+    position: fixed;
+    top: 2vw;
+    right: 35vw;
+    left: 35vw;
+    width: 30vw;
+}
+
+.date{
+    background-color: rgb(123, 148, 86);
+    color: rgb(255, 247, 231);
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 28px;
+    padding: 5% 3%;
+}
+
+.list{
+    margin-top: 10%;
+    background-color: white;
+    padding: 5% 5%;
+    color: rgb(123, 148, 86);
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.listItems input[type="checkbox"]{
+    width: 14px;
+    height: 14px;
+    border: 100px solid rgb(123, 148, 86);
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.listItems input:checked+span{
+    text-decoration: line-through;
+    text-decoration-color: rgb(123, 148, 86);
+}
+
+.listItems{
+    word-wrap: break-word;
+    word-break: break-all;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+hr{
+    border-color: rgba(123, 148, 86, 0.15);
+}
+
+form{
+    width: 100%;
+    display: flex;
+    gap: 10%;
+}
+
+.item input{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 2% 1%;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(123, 148, 86);
+}
+
+.item input::placeholder{
+    color: rgba(123, 148, 86, 0.447);
+}
+
+.item input:focus{
+    outline: none;
+    box-shadow: inset 0 -1px 0 0 rgb(123, 148, 86);
+}
+
+button{
+    outline: none;
+    border: none;
+    width: 11%;
+    border-radius: 50%;
+    font-size: 28px;
+    background-color: rgb(123, 148, 86);
+    color: rgb(255, 247, 231);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1100px) {
+    .box{
+        position: fixed;
+        top: 2vw;
+        right: 30vw;
+        left: 30vw;
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .box{
+        position: fixed;
+        top: 2vw;
+        right: 25vw;
+        left: 25vw;
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .box{
+        position: fixed;
+        top: 2vw;
+        right: 20vw;
+        left: 20vw;
+        width: 60vw;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+    
+    .list{
+        font-size: 18px;
+    }
+
+    button{
+        width: 15%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .box{
+        position: fixed;
+        top: 2vw;
+        right: 10vw;
+        left: 10vw;
+        width: 80vw;
+    }
+}
