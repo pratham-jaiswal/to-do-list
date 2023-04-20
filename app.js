@@ -6,7 +6,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-let items = ['Nahane Jaa Nahanee', 'Paaaani piyoooooooo']
+let items = ['Drink Water', 'Go for a run']
 
 app.get("/", function(req, res){
     let today = new Date();
