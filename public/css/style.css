@@ -106,30 +106,21 @@ footer {
 
 @media screen and (max-width: 1100px) {
     .box{
-        position: fixed;
-        top: 2vw;
-        right: 30vw;
-        left: 30vw;
+        margin: 2vw 30vw 2vw 30vw;
         width: 40vw;
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     .box{
-        position: fixed;
-        top: 2vw;
-        right: 25vw;
-        left: 25vw;
+        margin: 2vw 25vw 2vw 25vw;
         width: 50vw;
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 550px) {
     .box{
-        position: fixed;
-        top: 2vw;
-        right: 20vw;
-        left: 20vw;
+        margin: 2vw 20vw 2vw 20vw;
         width: 60vw;
     }
 
@@ -147,12 +138,9 @@ footer {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .box{
-        position: fixed;
-        top: 2vw;
-        right: 10vw;
-        left: 10vw;
+        margin: 2vw 10vw 2vw 10vw;
         width: 80vw;
     }
 }
