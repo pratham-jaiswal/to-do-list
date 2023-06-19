@@ -1,16 +1,22 @@
 <%- include('header') %>
     <div class="box">
         <div class="title">
-            <h1><%=listTitle%></h1>        
+            <h1><%=listTitle.toUpperCase()%></h1>        
         </div>
         <div class="list">
-            <% for (var i=0; i<newListTasks.length; i++){%>
-                <p class="listItems"><input type="checkbox"><span><%=newListTasks[i]%></span></p>
-                <hr>
-            <%}%>
-            <form class="item" action="<%=route%>" method="post">
+            <form action="/delete" method="post">
+                <% for (var i=0; i<items.length; i++){%>
+                    <p class="listItems">
+                        <input type="checkbox" name="checkbox" value="<%= items[i]._id %>" onclick="this.form.submit()">
+                        <span><%=items[i].name%></span>
+                    </p>
+                    <hr>
+                <%}%>
+                <input type="hidden" name="listName" value="<%= listTitle %>">
+            </form>
+            <form class="item" action="/" method="post">
                 <input type="text" name="newItem" placeholder="New Task" autocomplete="off">
-                <button type="submit" name="list">+</button>
+                <button type="submit" name="list" value="<%= listTitle %>">+</button>
             </form>
         </div>
     </div>
