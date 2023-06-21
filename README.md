@@ -33,17 +33,22 @@ This saves time and effort, allowing you to focus on writing code and testing it
 After starting the node, open a browser, type "*localhost:3000*" and hit enter.
 | ![Image](https://i.imgur.com/NdWGIFF.png) |
 |:--:|
-| <i>Homepage</i>|
+| <i>Homepage</i> |
 <br/><br/>
-| ![Image](https://i.imgur.com/zfGUIaX.png) ||:--:|
-| <i>Database - Default List</i>|
+
+| ![Image](https://i.imgur.com/zfGUIaX.png) |
+|:--:|
+| <i>Database - Default List</i> |
 <br/><br/>
 
 A custom list can be created by just typing "*localhost:3000/<:listName>*"
 
-| ![Image](https://i.imgur.com/BX8absC.png) ||:--:|
-| <i>Custom List</i>|
+| ![Image](https://i.imgur.com/BX8absC.png) |
+|:--:|
+| <i>Custom List</i> |
 <br/><br/>
-| ![Image](https://i.imgur.com/lgKKjmX.png) ||:--:|
-| <i>Database - Custom List (Work)</i>|
+
+| ![Image](https://i.imgur.com/lgKKjmX.png) |
+|:--:|
+| <i>Database - Custom List (Work)</i> |
 <br/><br/>
