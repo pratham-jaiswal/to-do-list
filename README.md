@@ -21,13 +21,27 @@ git clone https://github.com/pratham-jaiswal/to-do-list.git
 ## Running the code
 To run the code simply open your terminal/command prompt in that directory and run the following command,
 ```bash
-node app.py
+node app.js
 ```
-To avoid the need to manually stop and restart a Node.js application every time a change is made to the code, nodemon should be used. Open your terminal/command prompt in that directory and run the following command,
+
+**OR** (Recommended)
+
+Update the package.json file by setting the "main" property to "app.js":
+```json
+{
+  ...
+  "main": "app.js",
+  ...
+}
+```
+
+To avoid the need to manually stop and restart a Node.js application every time a change is made to the code, nodemon should be used. Open your terminal/command prompt in that directory and run the following command:
 ```bash
-nodemon app.js
+nodemon
 ```
+
 This saves time and effort, allowing you to focus on writing code and testing it, rather than worrying about restarting the application.
+<br/><br/>
 
 ## Test the website
 After starting the node, open a browser, type "*localhost:3000*" and hit enter.
